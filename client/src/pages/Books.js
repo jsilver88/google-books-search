@@ -8,9 +8,9 @@ import BookResults from "../components/BookResults";
 class Books extends Component {
     state = {
         search: "",
+        books: [],
         error: "",
-        message: "",
-        books: []
+        message: ""
     };
 
     handleInputChange = event => {
@@ -28,7 +28,7 @@ class Books extends Component {
                         id: book.id,
                         title: book.volumeInfo.title,
                         author: book.volumeInfo.authors,
-                        description: book.volumInfo.description,
+                        description: book.volumeInfo.description,
                         image: book.volumeInfo.imageLinks.thumbnail,
                         link: book.volumeInfo.infoLink
                     };
@@ -40,7 +40,7 @@ class Books extends Component {
 
     handleSavedButton = event => {
         event.preventDefault();
-        let booksSaved = this.state.book.filter(bookSaved => bookSaved.id === event.target.id);
+        let booksSaved = this.state.books.filter(bookSaved => bookSaved.id === event.target.id);
         booksSaved = booksSaved[0];
         API.saveBook(booksSaved).then(this.setState({ message: alert("This book has been saved") })).catch(err => console.log(err));
     }

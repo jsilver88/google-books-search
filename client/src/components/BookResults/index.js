@@ -15,7 +15,7 @@ const BookResults = props => {
                 <div className="card-body">
                     <div className="article">
                         <h3>Results</h3>
-                        {props.book.map(book => {
+                        {props.books.map(book => {
                             return (
                                 <li className="list-group-item">
                                     <Row className="result row" id={book.title + "card"} key={book._id}>
@@ -38,7 +38,7 @@ const BookResults = props => {
                                     <br />
                                     <Row className="button">
                                         <button className="btn btn-primary" id={book.id} onClick={event => props.handleSavedButton(event)}>Save Book</button>
-                                        <a href={book.link} target="_blank">
+                                        <a href={book.link} target="_blank" rel="noopener noreferrer">
                                             <button className="btn btn-success">View Book</button>
                                         </a>
                                     </Row>
