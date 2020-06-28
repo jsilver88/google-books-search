@@ -50,6 +50,7 @@ class Books extends Component {
             <Container fluid={true}>
                 <Jumbotron>
                     <h1>Google Book Search</h1>
+                    <h4>Search for and Save Books of Interest</h4>
                 </Jumbotron>
                 <Container>
                     <Row>

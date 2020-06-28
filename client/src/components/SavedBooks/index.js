@@ -25,10 +25,10 @@ const SavedBooks = props => {
                                         <Col size="1" />
                                         <Col size="9">
                                             <Row>
-                                                <h1>{savedBook.title}</h1>
+                                                <h2>{savedBook.title}</h2>
                                             </Row>
                                             <Row>
-                                                <h2>{savedBook.authors}</h2>
+                                                <h3>{savedBook.authors}</h3>
                                             </Row>
                                             <Row>
                                                 <h4>{savedBook.description}</h4>
