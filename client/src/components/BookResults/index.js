@@ -22,13 +22,12 @@ const BookResults = props => {
                                         <Col size="2" className="image">
                                             <img src={book.image} alt={book.title} />
                                         </Col>
-                                        <Col size="1" className="empty" />
                                         <Col size="9" className="books">
                                             <Row>
                                                 <h4>{book.title}</h4>
                                             </Row>
                                             <Row>
-                                                <h4>{book.author}</h4>
+                                                <h4>{book.author.join(", ")}</h4>
                                             </Row>
                                             <Row>
                                                 <p>{book.description}</p>

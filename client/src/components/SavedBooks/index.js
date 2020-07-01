@@ -18,17 +18,16 @@ const SavedBooks = props => {
                         {props.booksSaved.map(savedBook => {
                             return (
                                 <li className="list-group-item">
-                                    <Row id={savedBook.title + "Card"} key={savedBook._id}>
+                                    <Row className="row" id={savedBook.title + "Card"} key={savedBook._id}>
                                         <Col size="2">
                                             <img src={savedBook.image} alt={savedBook.title} />
                                         </Col>
-                                        <Col size="1" />
                                         <Col size="9">
                                             <Row>
                                                 <h2>{savedBook.title}</h2>
                                             </Row>
                                             <Row>
-                                                <h3>{savedBook.authors}</h3>
+                                                <h3>{savedBook.author}</h3>
                                             </Row>
                                             <Row>
                                                 <h4>{savedBook.description}</h4>
