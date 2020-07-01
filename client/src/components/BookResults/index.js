@@ -18,13 +18,13 @@ const BookResults = props => {
                         {props.books.map(book => {
                             return (
                                 <li className="list-group-item">
-                                    <Row className="result row" id={book.title + "card"} key={book._id}>
+                                    <Row className="result row" key={book._id}>
                                         <Col size="2" className="image">
                                             <img src={book.image} alt={book.title} />
                                         </Col>
                                         <Col size="9" className="books">
                                             <Row>
-                                                <h4>{book.title}</h4>
+                                                <h2>{book.title}</h2>
                                             </Row>
                                             <Row>
                                                 <h4>{book.author.join(", ")}</h4>
