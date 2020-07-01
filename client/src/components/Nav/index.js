@@ -4,7 +4,7 @@ function Nav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="/">
-                <h3 className="text-white">Google Book Search</h3>
+                <h3 className="text-white"><i class="fas fa-book"></i>Google Books</h3>
             </a>
             <div id="nav-bar">
                 <ul className="navbar-nav">
@@ -17,7 +17,7 @@ function Nav() {
                     </li>
                     <li className="nav-item" id="saved">
                         <a className="nav-link" href="/saved">
-                            <button type="button" className="btn btn-danger text-white">
+                            <button type="button" className="btn btn-warning text-white">
                                 Saved Books
                             </button>
                         </a>

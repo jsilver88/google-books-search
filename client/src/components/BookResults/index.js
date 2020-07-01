@@ -36,9 +36,9 @@ const BookResults = props => {
                                     </Row>
                                     <br />
                                     <Row className="button">
-                                        <button className="btn btn-primary" id={book.id} onClick={event => props.handleSavedButton(event)}>Save Book</button>
+                                        <button className="btn btn-warning" id={book.id} onClick={event => props.handleSavedButton(event)}>Save Book</button>
                                         <a href={book.link} target="_blank" rel="noopener noreferrer">
-                                            <button className="btn btn-success">View Book</button>
+                                            <button className="btn btn-info">View Book</button>
                                         </a>
                                     </Row>
                                 </li>
