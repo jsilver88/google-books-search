@@ -15,14 +15,14 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://books:060660jr@ds121950.mlab.com:21950/heroku_j3qq98d8", {
     useNewUrlParser: true
 });
 
-// Send every other request to the React app
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// // Send every other request to the React app
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.listen(PORT, () => {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
