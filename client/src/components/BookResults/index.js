@@ -19,7 +19,7 @@ const BookResults = props => {
                             return (
                                 <li className="list-group-item">
                                     <Row className="result row" key={book._id}>
-                                        <Col size="2" className="image">
+                                        <Col size="3" className="image">
                                             <img src={book.image} alt={book.title} />
                                         </Col>
                                         <Col size="9" className="books">

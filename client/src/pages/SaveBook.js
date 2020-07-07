@@ -29,7 +29,10 @@ class SaveBooks extends Component {
     render() {
         return (
             <Container fluid>
-                <Jumbotron />
+                <Jumbotron>
+                    <h1>Google Book Search</h1>
+                    <h4>Search for and Save Books of Interest</h4>
+                </Jumbotron>
                 <Container>
                     <SavedBooks booksSaved={this.state.booksSaved} handleDeleteButton={this.handleDeleteButton} />
                 </Container>
